@@ -1,0 +1,58 @@
+export const domains = [
+  {
+    id:          'industry-enterprise',
+    label:       'Industry & Enterprise',
+    description: 'Client and sector solutions',
+    count:       18,
+    icon:        'org',
+  },
+  {
+    id:          'song',
+    label:       'Song',
+    description: 'Marketing, sales & CX excellence',
+    count:       12,
+    icon:        'star',
+  },
+  {
+    id:          'supply-chain-engineering',
+    label:       'Supply Chain & Engineering',
+    description: 'Operations & product engineering',
+    count:       8,
+    icon:        'flow',
+  },
+  {
+    id:          'finance',
+    label:       'Finance',
+    description: 'Finance transformation & CFO agenda',
+    count:       6,
+    icon:        'chart',
+  },
+  {
+    id:          'talent',
+    label:       'Talent',
+    description: 'Workforce & HR transformation',
+    count:       5,
+    icon:        'people',
+  },
+  {
+    id:          'cyber',
+    label:       'Cyber',
+    description: 'Security, risk & compliance',
+    count:       9,
+    icon:        'shield',
+  },
+  {
+    id:          'digital-core-ai',
+    label:       'Digital Core / AI',
+    description: 'AI, data, cloud & platforms',
+    count:       22,
+    icon:        'circuit',
+  },
+  {
+    id:          'reinvention-delivery',
+    label:       'Reinvention Delivery',
+    description: 'Large-scale transformation delivery',
+    count:       4,
+    icon:        'atom',
+  },
+]

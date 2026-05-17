@@ -1,0 +1,24 @@
+.badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  flex-shrink: 0;
+}
+
+.high {
+  background-color: var(--color-success-dim);
+  color: var(--color-success);
+}
+
+.medium {
+  background-color: var(--color-restricted);
+  color: var(--color-restricted-text);
+}
+
+.low {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border-subtle);
+}

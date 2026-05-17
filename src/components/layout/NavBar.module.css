@@ -1,0 +1,99 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--layout-nav-height);
+  background-color: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border-subtle);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: 0 var(--layout-padding-x);
+  gap: var(--space-4);
+}
+
+/* ── Wordmark ── */
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.wordmarkBrand {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.wordmarkSep {
+  color: var(--color-border-default);
+  font-size: var(--text-sm);
+  margin: 0 var(--space-1);
+}
+
+.wordmarkCatalog {
+  font-family: var(--font-body);
+  font-weight: var(--weight-light);
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  line-height: 1;
+}
+
+/* ── Center search slot ── */
+.searchSlot {
+  flex: 1;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+/* ── Right actions ── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.contributeBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+}
+
+.contributeBtn:hover {
+  background-color: var(--color-accent-glow);
+}
+
+.bellBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  cursor: not-allowed;
+  opacity: 0.5;
+}

@@ -1,0 +1,12 @@
+.root {
+  min-height: 100vh;
+  background-color: var(--color-bg-base);
+}
+
+.main {
+  padding-top: var(--layout-nav-height);
+  padding-left: var(--layout-padding-x);
+  padding-right: var(--layout-padding-x);
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+}

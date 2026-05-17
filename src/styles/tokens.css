@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+:root {
+  /* ── Brand ── */
+  --color-accent:        #A100FF;
+  --color-accent-dim:    #7B00C4;
+  --color-accent-glow:   rgba(161, 0, 255, 0.15);
+
+  /* ── Backgrounds ── */
+  --color-bg-base:       #0A0A0F;
+  --color-bg-surface:    #13131A;
+  --color-bg-elevated:   #1C1C26;
+  --color-bg-overlay:    rgba(10, 10, 15, 0.85);
+
+  /* ── Borders ── */
+  --color-border-subtle:  rgba(255, 255, 255, 0.06);
+  --color-border-default: rgba(255, 255, 255, 0.12);
+  --color-border-accent:  rgba(161, 0, 255, 0.4);
+
+  /* ── Text ── */
+  --color-text-primary:   #F0F0F5;
+  --color-text-secondary: #9999AA;
+  --color-text-muted:     #5A5A6E;
+  --color-text-inverse:   #0A0A0F;
+
+  /* ── Semantic ── */
+  --color-flagship:       #A100FF;
+  --color-flagship-glow:  rgba(161, 0, 255, 0.2);
+  --color-restricted:     rgba(255, 180, 0, 0.15);
+  --color-restricted-text: #FFB400;
+  --color-success:        #00C896;
+  --color-success-dim:    rgba(0, 200, 150, 0.12);
+
+  /* ── Typography — Families ── */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* ── Typography — Scale ── */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.375rem;
+  --text-2xl:  1.75rem;
+  --text-3xl:  2.5rem;
+  --text-4xl:  3.5rem;
+
+  /* ── Typography — Weight ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+
+  /* ── Typography — Leading ── */
+  --leading-tight:  1.2;
+  --leading-normal: 1.5;
+  --leading-loose:  1.7;
+
+  /* ── Typography — Tracking ── */
+  --tracking-wide:  0.08em;
+  --tracking-tight: -0.02em;
+
+  /* ── Spacing ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ── Shadows ── */
+  --shadow-card:     0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-elevated: 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-flagship: 0 0 0 1px var(--color-border-accent),
+                     0 0 24px var(--color-flagship-glow);
+  --shadow-panel:    -8px 0 40px rgba(0,0,0,0.6);
+
+  /* ── Radius ── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-pill: 9999px;
+
+  /* ── Transitions ── */
+  --transition-fast:  150ms ease;
+  --transition-base:  250ms ease;
+  --transition-slow:  400ms ease;
+  --transition-panel: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Layout ── */
+  --layout-max-width:  1280px;
+  --layout-padding-x:  var(--space-8);
+  --layout-nav-height: 64px;
+  --layout-panel-width: 560px;
+}
+
+/* Breakpoints (reference — use in media queries)
+   sm:  640px
+   md:  768px
+   lg:  1024px
+   xl:  1280px
+*/
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast:  0ms;
+    --transition-base:  0ms;
+    --transition-slow:  0ms;
+    --transition-panel: 0ms;
+  }
+}

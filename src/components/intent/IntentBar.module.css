@@ -1,0 +1,80 @@
+.bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-default);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  width: 100%;
+}
+
+.bar:focus-within {
+  border-color: var(--color-border-accent);
+  box-shadow: 0 0 0 3px var(--color-flagship-glow);
+}
+
+/* ── Hero variant ── */
+.hero {
+  height: 56px;
+  border-radius: var(--radius-pill);
+  padding: 0 var(--space-3) 0 var(--space-5);
+}
+
+.hero .input {
+  font-size: var(--text-base);
+}
+
+/* ── Compact nav variant ── */
+.compact {
+  height: 40px;
+  border-radius: var(--radius-lg);
+  padding: 0 var(--space-2) 0 var(--space-4);
+}
+
+.compact .input {
+  font-size: var(--text-sm);
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  margin-right: var(--space-3);
+}
+
+.input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  color: var(--color-text-primary);
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.submit {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-accent);
+  color: #fff;
+  transition: background-color var(--transition-fast);
+  margin-left: var(--space-2);
+}
+
+.submit:hover {
+  background-color: var(--color-accent-dim);
+}
+
+.compact .submit {
+  width: 28px;
+  height: 28px;
+}

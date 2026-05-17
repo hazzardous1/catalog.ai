@@ -1,0 +1,185 @@
+.page {
+  min-height: calc(100vh - var(--layout-nav-height));
+  padding: var(--space-12) var(--layout-padding-x) var(--space-24);
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* ── Header ── */
+.header {
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-regular);
+  color: var(--color-text-primary);
+  line-height: var(--leading-tight);
+  margin: 0 0 var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ── Duplicate alert ── */
+.duplicateAlert {
+  background-color: var(--color-restricted);
+  border: 1px solid var(--color-restricted-text);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.duplicateMsg {
+  font-size: var(--text-sm);
+  color: var(--color-restricted-text);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+.duplicateMsg strong {
+  color: var(--color-text-primary);
+  font-weight: var(--weight-medium);
+}
+
+.duplicateActions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.proceedBtn {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-accent);
+  color: #fff;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.proceedBtn:hover { background-color: var(--color-accent-dim); }
+
+.linkBtn {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.linkBtn:hover {
+  border-color: var(--color-border-accent);
+  color: var(--color-text-primary);
+}
+
+.cancelDupBtn {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-4);
+  transition: color var(--transition-fast);
+}
+
+.cancelDupBtn:hover { color: var(--color-text-secondary); }
+
+/* ── OR divider ── */
+.orDivider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.orLine {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border-subtle);
+}
+
+.orText {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ── SharePoint input ── */
+.spForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.spLabel {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.spRow {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.spInput {
+  flex: 1;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  padding: var(--space-3) var(--space-4);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.spInput:focus {
+  border-color: var(--color-border-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+}
+
+.spInput::placeholder { color: var(--color-text-muted); }
+
+.spBtn {
+  padding: var(--space-3) var(--space-5);
+  background-color: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), opacity var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.spBtn:hover:not(:disabled) { background-color: var(--color-accent-dim); }
+.spBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Cancel link ── */
+.cancelLink {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-2) 0;
+  transition: color var(--transition-fast);
+}
+
+.cancelLink:hover { color: var(--color-text-secondary); }

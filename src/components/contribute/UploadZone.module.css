@@ -1,0 +1,64 @@
+.zone {
+  border: 2px dashed var(--color-border-default);
+  border-radius: var(--radius-xl);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  transition: border-color var(--transition-base), background-color var(--transition-base);
+  user-select: none;
+}
+
+.zone:hover:not(.pulsing),
+.dragOver {
+  border-color: var(--color-border-accent);
+  background-color: var(--color-accent-glow);
+}
+
+.pulsing {
+  cursor: default;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1;    border-color: var(--color-border-default); }
+  50%       { opacity: 0.5; border-color: var(--color-border-accent);  }
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.icon {
+  color: var(--color-text-muted);
+}
+
+.dropText {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.browseLink {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.formatsText {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.loadingText {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulsing { animation: none; }
+}
